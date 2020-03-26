@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.nebula.view.H5TitleBarFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/il_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/close"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mainTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/h5_provider_bg"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/h5_provider_bg"
+                android:visibility="gone"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/options1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/o1image"
+                android:layout_width="26dp"
+                android:src="@drawable/more"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/options"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</com.alipay.mobile.nebula.view.H5TitleBarFrameLayout>

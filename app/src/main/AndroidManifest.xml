@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mpaas.demo">
+
+    <application
+        android:name="com.mpaas.demo.MyApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppThemeNew">
+
+        <!--UC开发者Key-->
+        <meta-data
+            android:name="UCSDKAppKey"
+            android:value="JJQ/FLbHKX+ETiFNpCcb0fqjPfQ+JnjGBxDaqUm0MDcNATUVfsVrSh4KHq8of4/pFud/TDgjKf8891LpDlGG4w==" />
+
+        <activity android:name="com.mpaas.demo.nebula.OnlineActivity" />
+        <activity android:name="com.mpaas.demo.nebula.CustomizeActivity" />
+        <activity android:name="com.mpaas.demo.nebula.NebulaAppActivity" />
+        <activity android:name="com.mpaas.demo.nebula.EmbedActivity" />
+        <activity android:name="com.mpaas.demo.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- 内部测试 meta-data，开发者无需关注 start -->
+        <meta-data
+            android:name="diagnose.registry"
+            android:value="com.mpaas.health.cases.nebula.NebulaDiagnoseRegistry;com.mpaas.health.cases.uc.UcDiagnoseRegistry;com.mpaas.diagnose.context.common.CommonDiagnoseRegistry" />
+        <!-- 内部测试 meta-data，开发者无需关注 end -->
+
+    </application>
+
+</manifest>

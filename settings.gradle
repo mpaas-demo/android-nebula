@@ -1,0 +1,2 @@
+include ':nebula-build'
+project(':nebula-build').projectDir = new File('app')

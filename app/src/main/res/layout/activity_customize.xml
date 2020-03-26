@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/h5_default_titlebar_color"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_ua_setting"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white"
+                android:background="@color/h5_default_titlebar_color"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/ua_setting" />
+
+            <Button
+                android:id="@+id/btn_title_setting"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white"
+                android:background="@color/h5_default_titlebar_color"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/title_setting" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/title_setting_tips" />
+
+            <Button
+                android:id="@+id/btn_menu_setting"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white"
+                android:background="@color/h5_default_titlebar_color"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/menu_setting" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/menu_setting_tips" />
+
+            <Button
+                android:id="@+id/btn_progress_setting"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white"
+                android:background="@color/h5_default_titlebar_color"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/progress_setting" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/progress_setting_tips" />
+
+            <Button
+                android:id="@+id/btn_pullrefresh_setting"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white"
+                android:background="@color/h5_default_titlebar_color"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/pull_refresh_setting" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/pull_header_setting_tips" />
+
+
+            <Button
+                android:id="@+id/btn_bg_setting"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white"
+                android:background="@color/h5_default_titlebar_color"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/bg_setting" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/bg_setting_tips" />
+
+            <Button
+                android:id="@+id/btn_plugin_url_intercept"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white"
+                android:background="@color/h5_default_titlebar_color"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/title_plugin_url_intercept" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/url_intercept_tips" />
+
+            <Button
+                android:id="@+id/btn_embed_webview"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white"
+                android:background="@color/h5_default_titlebar_color"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                android:text="@string/embed_webview" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:text="@string/embed_webview_tips" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,13 @@
+.idea/
+.gradle/
+bin/
+gen/
+build/
+*.iml
+**/.DS_Store
+local.properties
+.alipay/
+.mdk/
+
+alipay_mavens.gradle
+diagnose.gradle
