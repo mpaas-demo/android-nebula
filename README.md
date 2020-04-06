@@ -25,7 +25,7 @@ demo 中默认使用10.1.68基线。
 
 1. 删除 mpaas_packages.json 文件。
 2. mPaaS IDEA插件 -> 组件管理 -> 选择基线 -> 确认。
-3. mPaaS IDEA插件 -> 组件管理 -> 安装日志组件。
+3. mPaaS IDEA插件 -> 组件管理 -> 安装H5 容器组件。
 4. 同步工程。
 
 注意：
