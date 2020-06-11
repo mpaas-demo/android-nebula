@@ -47,6 +47,7 @@ public class NewH5TitleViewImpl extends AbsTitleView {
         }
         content = (H5TitleBarFrameLayout) LayoutInflater.from(context).inflate(R.layout.h5_new_title_layout, parent, false);
         content.getContentBgView().setColor(context.getResources().getColor(R.color.h5_default_titlebar_color));
+        content.setTag("h5_titlebar");
         mainTitleView = (TextView) content.findViewById(R.id.mainTitle);
         subTitleView = (TextView) content.findViewById(R.id.subTitle);
         btnBack = content.findViewById(R.id.back);
