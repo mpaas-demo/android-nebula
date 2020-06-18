@@ -14,7 +14,7 @@
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
+			"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
 			"bundleName":"android-phone-mobilesdk-framework",
 			"classifier":[
 				"AndroidManifest",
@@ -22,12 +22,12 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":10
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
 					"bundleName":"android-phone-mobilesdk-quinox",
 					"intersection":38
 				},
@@ -43,27 +43,26 @@
 				"android-phone-thirdparty-androidsupport"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar"
 			],
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
+			"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
 			"bundleName":"android-phone-mobilesdk-quinox",
 			"classifier":[
-				"multidex",
-				"util",
-				"AndroidManifest",
 				"api",
-				"core"
+				"AndroidManifest",
+				"util",
+				"multidex"
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
-					"intersection":14
+					"intersection":15
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
@@ -74,28 +73,35 @@
 					"bundleGav":"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar",
 					"bundleName":"android-phone-thirdparty-wire",
 					"intersection":5
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar",
+					"bundleName":"android-phone-thirdparty-fastjson",
+					"intersection":1
 				}
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging",
 				"android-phone-thirdparty-androidsupport",
-				"android-phone-thirdparty-wire"
+				"android-phone-thirdparty-wire",
+				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
-				"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar"
+				"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar",
+				"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar"
 			],
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+			"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 			"bundleName":"android-phone-mobilesdk-logging",
 			"classifier":[
 				"tianyan",
+				"AndroidManifest",
 				"util",
-				"api",
-				"AndroidManifest"
+				"api"
 			],
 			"dependBundles":[
 				{
@@ -128,12 +134,12 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":1
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 					"bundleName":"android-phone-mobilesdk-transport",
 					"intersection":29
 				},
@@ -161,8 +167,8 @@
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 				"com.alipay.android.phone.mobilesdk:netsdkextdependapi-build:1.0.1.190620165649@jar",
 				"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar",
 				"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar"
@@ -170,7 +176,7 @@
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
+			"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 			"bundleName":"android-phone-mobilesdk-transport",
 			"classifier":[
 				"AndroidManifest",
@@ -178,17 +184,17 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":11
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
 					"bundleName":"android-phone-mobilesdk-monitor",
-					"intersection":3
+					"intersection":4
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
+					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
 					"bundleName":"android-phone-thirdparty-utdid",
 					"intersection":1
 				},
@@ -223,9 +229,9 @@
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
-				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
+				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.mobilesdk:netsdkextdependapi-build:1.0.1.190620165649@jar",
 				"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar",
@@ -246,7 +252,7 @@
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.mobilesdk:netsdkextdepend-build:1.0.2.190918140838@jar",
+			"bundleGav":"com.alipay.android.phone.mobilesdk:netsdkextdepend-build:1.0.2.200525171156@jar",
 			"bundleName":"android-phone-mobilesdk-netsdkextdepend",
 			"classifier":[
 				"AndroidManifest",
@@ -254,9 +260,29 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":6
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+					"bundleName":"android-phone-mobilesdk-storage",
+					"intersection":1
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
+					"bundleName":"android-phone-thirdparty-utdid",
+					"intersection":1
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200319193049@jar",
+					"bundleName":"android-phone-mobilecommon-lbs",
+					"intersection":3
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.200319181707@jar",
+					"bundleName":"android-phone-thirdparty-securityguard",
+					"intersection":4
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
@@ -264,55 +290,28 @@
 					"intersection":1
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
-					"bundleName":"android-phone-thirdparty-utdid",
-					"intersection":1
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200228172339@jar",
-					"bundleName":"android-phone-mobilecommon-lbs",
-					"intersection":3
-				},
-				{
-					"bundleGav":"com.mpaas.framework.adapter:mpaasframeworkadapter-build:1.0.0.190906163910@jar",
-					"bundleName":"com-mpaas-framework-adapter-mpaasframeworkadapter",
-					"intersection":1
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:netsdkextdependapi-build:1.0.1.190620165649@jar",
 					"bundleName":"android-phone-mobilesdk-netsdkextdependapi",
 					"intersection":15
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.190619203930@jar",
-					"bundleName":"android-phone-thirdparty-securityguard",
-					"intersection":4
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
-					"bundleName":"android-phone-mobilesdk-storage",
-					"intersection":1
 				}
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging",
-				"android-phone-mobilesdk-common",
+				"android-phone-mobilesdk-storage",
 				"android-phone-thirdparty-utdid",
 				"android-phone-mobilecommon-lbs",
-				"com-mpaas-framework-adapter-mpaasframeworkadapter",
-				"android-phone-mobilesdk-netsdkextdependapi",
 				"android-phone-thirdparty-securityguard",
-				"android-phone-mobilesdk-storage"
+				"android-phone-mobilesdk-common",
+				"android-phone-mobilesdk-netsdkextdependapi"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
+				"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200319193049@jar",
+				"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.200319181707@jar",
 				"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
-				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
-				"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200228172339@jar",
-				"com.mpaas.framework.adapter:mpaasframeworkadapter-build:1.0.0.190906163910@jar",
-				"com.alipay.android.phone.mobilesdk:netsdkextdependapi-build:1.0.1.190620165649@jar",
-				"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.190619203930@jar",
-				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar"
+				"com.alipay.android.phone.mobilesdk:netsdkextdependapi-build:1.0.1.190620165649@jar"
 			],
 			"remove":false
 		},
@@ -341,11 +340,11 @@
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.190619203930@jar",
+			"bundleGav":"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.200319181707@jar",
 			"bundleName":"android-phone-thirdparty-securityguard",
 			"classifier":[
-				"AndroidManifest",
-				"api"
+				"api",
+				"AndroidManifest"
 			],
 			"dependBundles":[],
 			"depends":[],
@@ -353,14 +352,15 @@
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
+			"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
 			"bundleName":"android-phone-thirdparty-utdid",
 			"classifier":[
+				"AndroidManifest",
 				"api"
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":5
 				}
@@ -369,7 +369,7 @@
 				"android-phone-mobilesdk-logging"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar"
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar"
 			],
 			"remove":false
 		},
@@ -382,14 +382,34 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":9
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200228192135@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200526105818@jar",
 					"bundleName":"android-phone-mobilesdk-autotracker",
 					"intersection":1
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+					"bundleName":"android-phone-mobilesdk-quinox",
+					"intersection":2
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
+					"bundleName":"android-phone-thirdparty-utdid",
+					"intersection":2
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":10
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200319193049@jar",
+					"bundleName":"android-phone-mobilecommon-lbs",
+					"intersection":2
 				},
 				{
 					"bundleGav":"com.mpaas.mas.adapter:mpaasmasadapter-build:1.2.0.200228192135@jar",
@@ -397,75 +417,74 @@
 					"intersection":1
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
-					"bundleName":"android-phone-thirdparty-utdid",
-					"intersection":2
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.securitycommon:aliupgrade-build:1.0.0.200228173401@jar",
 					"bundleName":"android-phone-securitycommon-aliupgrade",
 					"intersection":9
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200228172339@jar",
-					"bundleName":"android-phone-mobilecommon-lbs",
-					"intersection":2
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":10
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-quinox",
-					"intersection":2
 				}
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging",
 				"android-phone-mobilesdk-autotracker",
-				"com-mpaas-mas-adapter-mpaasmasadapter",
+				"android-phone-mobilesdk-quinox",
 				"android-phone-thirdparty-utdid",
-				"android-phone-securitycommon-aliupgrade",
-				"android-phone-mobilecommon-lbs",
 				"android-phone-mobilesdk-framework",
-				"android-phone-mobilesdk-quinox"
+				"android-phone-mobilecommon-lbs",
+				"com-mpaas-mas-adapter-mpaasmasadapter",
+				"android-phone-securitycommon-aliupgrade"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200228192135@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200526105818@jar",
+				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200319193049@jar",
 				"com.mpaas.mas.adapter:mpaasmasadapter-build:1.2.0.200228192135@jar",
-				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
-				"com.alipay.android.phone.securitycommon:aliupgrade-build:1.0.0.200228173401@jar",
-				"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200228172339@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar"
+				"com.alipay.android.phone.securitycommon:aliupgrade-build:1.0.0.200228173401@jar"
 			],
 			"remove":false
 		},
 		{
-			"bundleGav":"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200228173401@jar",
+			"bundleGav":"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200525154723@jar",
 			"bundleName":"com-mpaas-mpaasadapter-commonbiz",
 			"classifier":[
-				"api",
 				"AndroidManifest"
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+					"bundleName":"android-phone-wallet-nebula",
+					"intersection":10
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":5
 				},
 				{
-					"bundleGav":"com.mpaas.group.amap:amap-build:1.0.0.200302113657@jar",
+					"bundleGav":"com.mpaas.group.amap:amap-build:1.0.0.200512092747@jar",
 					"bundleName":"com-mpaas-group-amap-amap",
-					"intersection":12
+					"intersection":13
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilecommon:adaptermap-build:1.0.0.200415115711@jar",
+					"bundleName":"android-phone-mobilecommon-adaptermap",
+					"intersection":14
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":8
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+					"bundleName":"android-phone-mobilesdk-transport",
+					"intersection":1
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
 					"bundleName":"android-phone-wallet-antui",
-					"intersection":5
+					"intersection":7
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:commonbizservice-build:1.7.0.200228173401@jar",
@@ -473,24 +492,9 @@
 					"intersection":1
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
-					"bundleName":"android-phone-wallet-nebula",
-					"intersection":10
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
 					"bundleName":"android-phone-mobilesdk-rpc",
 					"intersection":2
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-					"bundleName":"android-phone-mobilesdk-transport",
-					"intersection":1
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":8
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
@@ -501,11 +505,6 @@
 					"bundleGav":"com.alipay.android.phone.mobilesdk:liteprocess-build:1.0.0.190617201909@jar",
 					"bundleName":"android-phone-mobilesdk-liteprocess",
 					"intersection":1
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.thirdparty:amap3dmap-build:3.3.3.190617171651@jar",
-					"bundleName":"android-phone-thirdparty-amap3dmap",
-					"intersection":14
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
@@ -519,39 +518,39 @@
 				}
 			],
 			"depends":[
+				"android-phone-wallet-nebula",
 				"android-phone-mobilesdk-logging",
 				"com-mpaas-group-amap-amap",
+				"android-phone-mobilecommon-adaptermap",
+				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-transport",
 				"android-phone-wallet-antui",
 				"android-phone-mobilesdk-commonbizservice",
-				"android-phone-wallet-nebula",
 				"android-phone-mobilesdk-rpc",
-				"android-phone-mobilesdk-transport",
-				"android-phone-mobilesdk-framework",
 				"android-phone-thirdparty-androidsupport",
 				"android-phone-mobilesdk-liteprocess",
-				"android-phone-thirdparty-amap3dmap",
 				"android-phone-mobilesdk-commonservice",
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.mpaas.group.amap:amap-build:1.0.0.200302113657@jar",
+				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.mpaas.group.amap:amap-build:1.0.0.200512092747@jar",
+				"com.alipay.android.phone.mobilecommon:adaptermap-build:1.0.0.200415115711@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 				"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
 				"com.alipay.android.phone.mobilesdk:commonbizservice-build:1.7.0.200228173401@jar",
-				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
 				"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.mobilesdk:liteprocess-build:1.0.0.190617201909@jar",
-				"com.alipay.android.phone.thirdparty:amap3dmap-build:3.3.3.190617171651@jar",
 				"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
 				"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar"
 			],
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.mobilecommon:dynamicrelease-build:2.5.7.191226170627@jar",
+			"bundleGav":"com.alipay.android.phone.mobilecommon:dynamicrelease-build:2.5.7.200324095434@jar",
 			"bundleName":"android-phone-mobilecommon-dynamicrelease",
 			"classifier":[
 				"api",
@@ -559,29 +558,44 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":12
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
-					"bundleName":"android-phone-wallet-antui",
-					"intersection":9
+					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+					"bundleName":"android-phone-mobilesdk-quinox",
+					"intersection":20
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
+					"bundleName":"android-phone-thirdparty-utdid",
+					"intersection":1
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":8
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200319193049@jar",
+					"bundleName":"android-phone-mobilecommon-lbs",
+					"intersection":2
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.sync:syncservice-build:2.0.0.200319181707@jar",
+					"bundleName":"android-phone-sync-syncservice",
+					"intersection":3
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+					"bundleName":"android-phone-mobilesdk-transport",
+					"intersection":10
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
 					"bundleName":"android-phone-mobilesdk-common",
 					"intersection":4
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
-					"bundleName":"android-phone-thirdparty-utdid",
-					"intersection":1
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.sync:syncservice-build:2.0.0.200228184723@jar",
-					"bundleName":"android-phone-sync-syncservice",
-					"intersection":3
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:commonbizservice-build:1.7.0.200228173401@jar",
@@ -592,26 +606,6 @@
 					"bundleGav":"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
 					"bundleName":"android-phone-mobilesdk-rpc",
 					"intersection":7
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-					"bundleName":"android-phone-mobilesdk-transport",
-					"intersection":10
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200228172339@jar",
-					"bundleName":"android-phone-mobilecommon-lbs",
-					"intersection":2
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":10
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-quinox",
-					"intersection":21
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
@@ -631,32 +625,30 @@
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging",
-				"android-phone-wallet-antui",
-				"android-phone-mobilesdk-common",
+				"android-phone-mobilesdk-quinox",
 				"android-phone-thirdparty-utdid",
+				"android-phone-mobilesdk-framework",
+				"android-phone-mobilecommon-lbs",
 				"android-phone-sync-syncservice",
+				"android-phone-mobilesdk-transport",
+				"android-phone-mobilesdk-common",
 				"android-phone-mobilesdk-commonbizservice",
 				"android-phone-mobilesdk-rpc",
-				"android-phone-mobilesdk-transport",
-				"android-phone-mobilecommon-lbs",
-				"android-phone-mobilesdk-framework",
-				"android-phone-mobilesdk-quinox",
 				"android-phone-thirdparty-androidsupport",
 				"android-phone-thirdparty-wire",
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200319193049@jar",
+				"com.alipay.android.phone.sync:syncservice-build:2.0.0.200319181707@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 				"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
-				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
-				"com.alipay.android.phone.sync:syncservice-build:2.0.0.200228184723@jar",
 				"com.alipay.android.phone.mobilesdk:commonbizservice-build:1.7.0.200228173401@jar",
 				"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilecommon:lbs-build:1.9.0.200228172339@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar",
 				"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar"
@@ -673,9 +665,29 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":14
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+					"bundleName":"android-phone-mobilesdk-storage",
+					"intersection":1
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+					"bundleName":"android-phone-mobilesdk-quinox",
+					"intersection":3
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
+					"bundleName":"android-phone-thirdparty-utdid",
+					"intersection":1
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":5
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
@@ -683,23 +695,8 @@
 					"intersection":2
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
-					"bundleName":"android-phone-thirdparty-utdid",
-					"intersection":1
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
 					"bundleName":"android-phone-mobilesdk-rpc",
-					"intersection":3
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":5
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-quinox",
 					"intersection":3
 				},
 				{
@@ -711,11 +708,6 @@
 					"bundleGav":"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
 					"bundleName":"android-phone-mobilesdk-commonservice",
 					"intersection":3
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
-					"bundleName":"android-phone-mobilesdk-storage",
-					"intersection":1
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar",
@@ -735,28 +727,28 @@
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging",
-				"android-phone-mobilesdk-common",
-				"android-phone-thirdparty-utdid",
-				"android-phone-mobilesdk-rpc",
-				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-storage",
 				"android-phone-mobilesdk-quinox",
+				"android-phone-thirdparty-utdid",
+				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-common",
+				"android-phone-mobilesdk-rpc",
 				"android-phone-thirdparty-androidsupport",
 				"android-phone-mobilesdk-commonservice",
-				"android-phone-mobilesdk-storage",
 				"android-phone-thirdparty-wire",
 				"android-phone-thirdparty-fastjson",
 				"mobileapi-mobileappcommon"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
 				"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
-				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
 				"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
-				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
 				"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar",
 				"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar",
 				"com.alipay.mobileapi:mobileappcommon-build:1.0.0.20180518@jar"
@@ -764,7 +756,7 @@
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
+			"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
 			"bundleName":"android-phone-mobilesdk-storage",
 			"classifier":[
 				"AndroidManifest",
@@ -772,9 +764,24 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":3
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+					"bundleName":"android-phone-mobilesdk-quinox",
+					"intersection":2
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":1
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.200319181707@jar",
+					"bundleName":"android-phone-thirdparty-securityguard",
+					"intersection":7
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
@@ -782,48 +789,26 @@
 					"intersection":2
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:aspect-build:1.4.1.200228173401@jar",
-					"bundleName":"android-phone-mobilesdk-aspect",
-					"intersection":1
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":1
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-quinox",
-					"intersection":2
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 					"bundleName":"android-phone-thirdparty-androidsupport",
 					"intersection":1
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.190619203930@jar",
-					"bundleName":"android-phone-thirdparty-securityguard",
-					"intersection":7
 				}
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging",
-				"android-phone-mobilesdk-common",
-				"android-phone-mobilesdk-aspect",
-				"android-phone-mobilesdk-framework",
 				"android-phone-mobilesdk-quinox",
-				"android-phone-thirdparty-androidsupport",
-				"android-phone-thirdparty-securityguard"
+				"android-phone-mobilesdk-framework",
+				"android-phone-thirdparty-securityguard",
+				"android-phone-mobilesdk-common",
+				"android-phone-thirdparty-androidsupport"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.200319181707@jar",
 				"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
-				"com.alipay.android.phone.mobilesdk:aspect-build:1.4.1.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
-				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
-				"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.190619203930@jar"
+				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar"
 			],
 			"remove":false
 		},
@@ -837,9 +822,29 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":7
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+					"bundleName":"android-phone-mobilesdk-quinox",
+					"intersection":7
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":19
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+					"bundleName":"android-phone-mobilesdk-transport",
+					"intersection":9
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.200319181707@jar",
+					"bundleName":"android-phone-thirdparty-securityguard",
+					"intersection":3
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
@@ -852,29 +857,9 @@
 					"intersection":10
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-					"bundleName":"android-phone-mobilesdk-transport",
-					"intersection":9
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":19
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-quinox",
-					"intersection":7
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 					"bundleName":"android-phone-thirdparty-androidsupport",
 					"intersection":2
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.190619203930@jar",
-					"bundleName":"android-phone-thirdparty-securityguard",
-					"intersection":3
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar",
@@ -884,30 +869,30 @@
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging",
+				"android-phone-mobilesdk-quinox",
+				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-transport",
+				"android-phone-thirdparty-securityguard",
 				"android-phone-mobilesdk-common",
 				"android-phone-mobilesdk-rpc",
-				"android-phone-mobilesdk-transport",
-				"android-phone-mobilesdk-framework",
-				"android-phone-mobilesdk-quinox",
 				"android-phone-thirdparty-androidsupport",
-				"android-phone-thirdparty-securityguard",
 				"android-phone-thirdparty-wire"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+				"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.200319181707@jar",
 				"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
 				"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
-				"com.alipay.android.phone.thirdparty:securityguard-build:5.4.2008.190619203930@jar",
 				"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar"
 			],
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
+			"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
 			"bundleName":"android-phone-mobilesdk-monitor",
 			"classifier":[
 				"api",
@@ -915,16 +900,16 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
-					"intersection":31
+					"intersection":32
 				}
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar"
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar"
 			],
 			"remove":false
 		},
@@ -955,44 +940,15 @@
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.mobilesdk:aspect-build:1.4.1.200228173401@jar",
-			"bundleName":"android-phone-mobilesdk-aspect",
-			"classifier":[
-				"advice",
-				"api",
-				"AndroidManifest"
-			],
-			"dependBundles":[
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-					"bundleName":"android-phone-mobilesdk-logging",
-					"intersection":4
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-quinox",
-					"intersection":2
-				}
-			],
-			"depends":[
-				"android-phone-mobilesdk-logging",
-				"android-phone-mobilesdk-quinox"
-			],
-			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar"
-			],
-			"remove":false
-		},
-		{
-			"bundleGav":"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200228192135@jar",
+			"bundleGav":"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200526105818@jar",
 			"bundleName":"android-phone-mobilesdk-autotracker",
 			"classifier":[
+				"AndroidManifest",
 				"api"
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":10
 				},
@@ -1007,7 +963,7 @@
 				"android-phone-thirdparty-androidsupport"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar"
 			],
 			"remove":false
@@ -1020,19 +976,19 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":10
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
-					"bundleName":"android-phone-mobilesdk-monitor",
-					"intersection":5
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200228192135@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200526105818@jar",
 					"bundleName":"android-phone-mobilesdk-autotracker",
 					"intersection":6
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
+					"bundleName":"android-phone-mobilesdk-monitor",
+					"intersection":5
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:tianyanadapter-build:1.0.4.200228192135@jar",
@@ -1047,22 +1003,22 @@
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging",
-				"android-phone-mobilesdk-monitor",
 				"android-phone-mobilesdk-autotracker",
+				"android-phone-mobilesdk-monitor",
 				"android-phone-mobilesdk-tianyanadapter",
 				"android-phone-thirdparty-androidsupport"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
-				"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200228192135@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200526105818@jar",
+				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
 				"com.alipay.android.phone.mobilesdk:tianyanadapter-build:1.0.4.200228192135@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar"
 			],
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
+			"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
 			"bundleName":"android-phone-wallet-nebula",
 			"classifier":[
 				"AndroidManifest",
@@ -1070,34 +1026,34 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":19
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
-					"bundleName":"android-phone-mobilesdk-monitor",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200526105818@jar",
+					"bundleName":"android-phone-mobilesdk-autotracker",
 					"intersection":3
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200228192135@jar",
-					"bundleName":"android-phone-mobilesdk-autotracker",
-					"intersection":3
+					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
+					"bundleName":"android-phone-mobilesdk-monitor",
+					"intersection":4
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":19
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+					"bundleName":"android-phone-mobilesdk-transport",
+					"intersection":1
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:commonbizservice-build:1.7.0.200228173401@jar",
 					"bundleName":"android-phone-mobilesdk-commonbizservice",
 					"intersection":2
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-					"bundleName":"android-phone-mobilesdk-transport",
-					"intersection":1
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":19
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
@@ -1132,11 +1088,11 @@
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging",
-				"android-phone-mobilesdk-monitor",
 				"android-phone-mobilesdk-autotracker",
-				"android-phone-mobilesdk-commonbizservice",
-				"android-phone-mobilesdk-transport",
+				"android-phone-mobilesdk-monitor",
 				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-transport",
+				"android-phone-mobilesdk-commonbizservice",
 				"android-phone-thirdparty-androidsupport",
 				"android-phone-mobilesdk-commonservice",
 				"android-phone-wallet-h5worker",
@@ -1145,12 +1101,12 @@
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
-				"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200228192135@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200526105818@jar",
+				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 				"com.alipay.android.phone.mobilesdk:commonbizservice-build:1.7.0.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
 				"com.alipay.android.phone.wallet:h5worker-build:1.0.0.190322133029@jar",
@@ -1198,7 +1154,7 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
+					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
 					"bundleName":"android-phone-wallet-nebula",
 					"intersection":133
 				},
@@ -1231,7 +1187,7 @@
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
+				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.wallet:h5worker-build:1.0.0.190322133029@jar",
 				"com.alipay.mobile:nebulakernel-build:1.0.0.190320163137@jar",
@@ -1240,7 +1196,7 @@
 			"remove":false
 		},
 		{
-			"bundleGav":"com.mpaas.nebula.adapter:mpaasnebulaadapter-build:10.1.60.200303114344@jar",
+			"bundleGav":"com.mpaas.nebula.adapter:mpaasnebulaadapter-build:10.1.60.200525171156@jar",
 			"bundleName":"com-mpaas-nebula-adapter-mpaasnebulaadapter",
 			"classifier":[
 				"api",
@@ -1248,14 +1204,39 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+					"bundleName":"android-phone-wallet-nebula",
+					"intersection":77
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.wallet:nebulaappproxy-build:1.6.2.200610101910@jar",
+					"bundleName":"android-phone-wallet-nebulaappproxy",
+					"intersection":3
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":5
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:nebulaappproxy-build:1.6.2.200303142508@jar",
-					"bundleName":"android-phone-wallet-nebulaappproxy",
-					"intersection":3
+					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+					"bundleName":"android-phone-mobilesdk-storage",
+					"intersection":2
+				},
+				{
+					"bundleGav":"com.mpaas.group.amap:amap-build:1.0.0.200512092747@jar",
+					"bundleName":"com-mpaas-group-amap-amap",
+					"intersection":5
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilecommon:dynamicrelease-build:2.5.7.200324095434@jar",
+					"bundleName":"android-phone-mobilecommon-dynamicrelease",
+					"intersection":6
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":11
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
@@ -1273,33 +1254,18 @@
 					"intersection":1
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
-					"bundleName":"android-phone-wallet-nebula",
-					"intersection":72
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
 					"bundleName":"android-phone-mobilesdk-rpc",
 					"intersection":4
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":10
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilecommon:dynamicrelease-build:2.5.7.191226170627@jar",
-					"bundleName":"android-phone-mobilecommon-dynamicrelease",
-					"intersection":6
+					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
+					"bundleName":"android-phone-thirdparty-androidsupport",
+					"intersection":1
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
 					"bundleName":"android-phone-mobilesdk-commonservice",
-					"intersection":2
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
-					"bundleName":"android-phone-mobilesdk-storage",
 					"intersection":2
 				},
 				{
@@ -1309,47 +1275,116 @@
 				}
 			],
 			"depends":[
-				"android-phone-mobilesdk-logging",
+				"android-phone-wallet-nebula",
 				"android-phone-wallet-nebulaappproxy",
+				"android-phone-mobilesdk-logging",
+				"android-phone-mobilesdk-storage",
+				"com-mpaas-group-amap-amap",
+				"android-phone-mobilecommon-dynamicrelease",
+				"android-phone-mobilesdk-framework",
 				"android-phone-wallet-antui",
 				"android-phone-mobilesdk-common",
 				"com-mpaas-mas-adapter-mpaasmasadapter",
-				"android-phone-wallet-nebula",
 				"android-phone-mobilesdk-rpc",
-				"android-phone-mobilesdk-framework",
-				"android-phone-mobilecommon-dynamicrelease",
+				"android-phone-thirdparty-androidsupport",
 				"android-phone-mobilesdk-commonservice",
-				"android-phone-mobilesdk-storage",
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.wallet:nebulaappproxy-build:1.6.2.200303142508@jar",
+				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+				"com.alipay.android.phone.wallet:nebulaappproxy-build:1.6.2.200610101910@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+				"com.mpaas.group.amap:amap-build:1.0.0.200512092747@jar",
+				"com.alipay.android.phone.mobilecommon:dynamicrelease-build:2.5.7.200324095434@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
 				"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
 				"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
 				"com.mpaas.mas.adapter:mpaasmasadapter-build:1.2.0.200228192135@jar",
-				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
 				"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-				"com.alipay.android.phone.mobilecommon:dynamicrelease-build:2.5.7.191226170627@jar",
+				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
-				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
 				"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar"
 			],
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.wallet:nebulaappproxy-build:1.6.2.200303142508@jar",
+			"bundleGav":"com.alipay.android.phone.wallet:nebulaappproxy-build:1.6.2.200610101910@jar",
 			"bundleName":"android-phone-wallet-nebulaappproxy",
 			"classifier":[
-				"api",
-				"AndroidManifest"
+				"AndroidManifest",
+				"api"
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+					"bundleName":"android-phone-wallet-nebula",
+					"intersection":212
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":16
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200526105818@jar",
+					"bundleName":"android-phone-mobilesdk-autotracker",
+					"intersection":2
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+					"bundleName":"android-phone-mobilesdk-storage",
+					"intersection":3
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.wallet:beephoto-build:1.0.0.200525161643@jar",
+					"bundleName":"android-phone-wallet-beephoto",
+					"intersection":4
+				},
+				{
+					"bundleGav":"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200525154723@jar",
+					"bundleName":"com-mpaas-mpaasadapter-commonbiz",
+					"intersection":3
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.wallet:scanexport-build:1.3.3.200511185851@jar",
+					"bundleName":"android-phone-wallet-scanexport",
+					"intersection":4
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+					"bundleName":"android-phone-mobilesdk-quinox",
+					"intersection":2
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
+					"bundleName":"android-phone-mobilesdk-monitor",
+					"intersection":6
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
+					"bundleName":"android-phone-thirdparty-utdid",
+					"intersection":1
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":13
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+					"bundleName":"android-phone-mobilesdk-transport",
+					"intersection":11
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.wallet:aompfilemanager-build:1.0.0.200319181707@jar",
+					"bundleName":"android-phone-wallet-aompfilemanager",
+					"intersection":4
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:socketcraft-build:1.1.2.200319181707@jar",
+					"bundleName":"android-phone-mobilesdk-socketcraft",
+					"intersection":5
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
@@ -1367,69 +1402,14 @@
 					"intersection":2
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:scanexport-build:1.3.3.200228192432@jar",
-					"bundleName":"android-phone-wallet-scanexport",
-					"intersection":4
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.wallet:beephoto-build:1.0.0.200228192325@jar",
-					"bundleName":"android-phone-wallet-beephoto",
-					"intersection":4
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
-					"bundleName":"android-phone-mobilesdk-monitor",
-					"intersection":6
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200228192135@jar",
-					"bundleName":"android-phone-mobilesdk-autotracker",
-					"intersection":2
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
-					"bundleName":"android-phone-thirdparty-utdid",
-					"intersection":1
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.wallet:aompfilemanager-build:1.0.0.200228173401@jar",
-					"bundleName":"android-phone-wallet-aompfilemanager",
-					"intersection":4
-				},
-				{
-					"bundleGav":"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200228173401@jar",
-					"bundleName":"com-mpaas-mpaasadapter-commonbiz",
-					"intersection":3
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:commonbizservice-build:1.7.0.200228173401@jar",
 					"bundleName":"android-phone-mobilesdk-commonbizservice",
 					"intersection":3
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
-					"bundleName":"android-phone-wallet-nebula",
-					"intersection":212
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
 					"bundleName":"android-phone-mobilesdk-rpc",
 					"intersection":8
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-					"bundleName":"android-phone-mobilesdk-transport",
-					"intersection":12
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":13
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-quinox",
-					"intersection":2
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupportrecyclerview-build:7.23.2.190729114049@jar",
@@ -1450,11 +1430,6 @@
 					"bundleGav":"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
 					"bundleName":"android-phone-mobilesdk-commonservice",
 					"intersection":6
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
-					"bundleName":"android-phone-mobilesdk-storage",
-					"intersection":3
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.wallet:aompfavorite-build:1.0.0.190323111102@jar",
@@ -1472,11 +1447,6 @@
 					"intersection":1
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:socketcraft-build:1.1.2.190318171311@jar",
-					"bundleName":"android-phone-mobilesdk-socketcraft",
-					"intersection":5
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar",
 					"bundleName":"android-phone-thirdparty-wire",
 					"intersection":4
@@ -1488,62 +1458,62 @@
 				}
 			],
 			"depends":[
+				"android-phone-wallet-nebula",
 				"android-phone-mobilesdk-logging",
+				"android-phone-mobilesdk-autotracker",
+				"android-phone-mobilesdk-storage",
+				"android-phone-wallet-beephoto",
+				"com-mpaas-mpaasadapter-commonbiz",
+				"android-phone-wallet-scanexport",
+				"android-phone-mobilesdk-quinox",
+				"android-phone-mobilesdk-monitor",
+				"android-phone-thirdparty-utdid",
+				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-transport",
+				"android-phone-wallet-aompfilemanager",
+				"android-phone-mobilesdk-socketcraft",
 				"android-phone-wallet-antui",
 				"android-phone-mobilecommon-multimedia",
 				"android-phone-mobilesdk-common",
-				"android-phone-wallet-scanexport",
-				"android-phone-wallet-beephoto",
-				"android-phone-mobilesdk-monitor",
-				"android-phone-mobilesdk-autotracker",
-				"android-phone-thirdparty-utdid",
-				"android-phone-wallet-aompfilemanager",
-				"com-mpaas-mpaasadapter-commonbiz",
 				"android-phone-mobilesdk-commonbizservice",
-				"android-phone-wallet-nebula",
 				"android-phone-mobilesdk-rpc",
-				"android-phone-mobilesdk-transport",
-				"android-phone-mobilesdk-framework",
-				"android-phone-mobilesdk-quinox",
 				"android-phone-thirdparty-androidsupportrecyclerview",
 				"android-phone-thirdparty-androidsupport",
 				"android-phone-mobilesdk-liteprocess",
 				"android-phone-mobilesdk-commonservice",
-				"android-phone-mobilesdk-storage",
 				"android-phone-wallet-aompfavorite",
 				"android-phone-wallet-h5worker",
 				"mobile-nebulakernel",
-				"android-phone-mobilesdk-socketcraft",
 				"android-phone-thirdparty-wire",
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200526105818@jar",
+				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+				"com.alipay.android.phone.wallet:beephoto-build:1.0.0.200525161643@jar",
+				"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200525154723@jar",
+				"com.alipay.android.phone.wallet:scanexport-build:1.3.3.200511185851@jar",
+				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
+				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200408204422@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+				"com.alipay.android.phone.wallet:aompfilemanager-build:1.0.0.200319181707@jar",
+				"com.alipay.android.phone.mobilesdk:socketcraft-build:1.1.2.200319181707@jar",
 				"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
 				"com.alipay.android.phone.mobilecommon:multimedia-build:1.19.0.200228192536@jar",
 				"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
-				"com.alipay.android.phone.wallet:scanexport-build:1.3.3.200228192432@jar",
-				"com.alipay.android.phone.wallet:beephoto-build:1.0.0.200228192325@jar",
-				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
-				"com.alipay.android.phone.mobilesdk:autotracker-build:1.0.0.200228192135@jar",
-				"com.alipay.android.phone.thirdparty:utdid-build:2.1.1.200228192135@jar",
-				"com.alipay.android.phone.wallet:aompfilemanager-build:1.0.0.200228173401@jar",
-				"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200228173401@jar",
 				"com.alipay.android.phone.mobilesdk:commonbizservice-build:1.7.0.200228173401@jar",
-				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
 				"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
 				"com.alipay.android.phone.thirdparty:androidsupportrecyclerview-build:7.23.2.190729114049@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.mobilesdk:liteprocess-build:1.0.0.190617201909@jar",
 				"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
-				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
 				"com.alipay.android.phone.wallet:aompfavorite-build:1.0.0.190323111102@jar",
 				"com.alipay.android.phone.wallet:h5worker-build:1.0.0.190322133029@jar",
 				"com.alipay.mobile:nebulakernel-build:1.0.0.190320163137@jar",
-				"com.alipay.android.phone.mobilesdk:socketcraft-build:1.1.2.190318171311@jar",
 				"com.alipay.android.phone.thirdparty:wire-build:1.5.3.190214191738@jar",
 				"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar"
 			],
@@ -1554,16 +1524,17 @@
 			"bundleName":"android-phone-wallet-nebulaconfig",
 			"classifier":[
 				"AndroidManifest",
-				"api"
+				"api",
+				"ui"
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
+					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
 					"bundleName":"android-phone-wallet-nebula",
 					"intersection":17
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
 					"bundleName":"android-phone-mobilesdk-framework",
 					"intersection":5
 				}
@@ -1573,8 +1544,8 @@
 				"android-phone-mobilesdk-framework"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar"
+				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar"
 			],
 			"remove":false
 		},
@@ -1586,12 +1557,17 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
+					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
 					"bundleName":"android-phone-wallet-nebula",
 					"intersection":43
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+					"bundleName":"android-phone-mobilesdk-storage",
+					"intersection":14
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 					"bundleName":"android-phone-mobilesdk-transport",
 					"intersection":1
 				},
@@ -1601,11 +1577,6 @@
 					"intersection":1
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
-					"bundleName":"android-phone-mobilesdk-storage",
-					"intersection":14
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar",
 					"bundleName":"android-phone-thirdparty-fastjson",
 					"intersection":3
@@ -1613,22 +1584,22 @@
 			],
 			"depends":[
 				"android-phone-wallet-nebula",
+				"android-phone-mobilesdk-storage",
 				"android-phone-mobilesdk-transport",
 				"android-phone-thirdparty-androidsupport",
-				"android-phone-mobilesdk-storage",
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
+				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
-				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
 				"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar"
 			],
 			"remove":false
 		},
 		{
-			"bundleGav":"com.mpaas.framework.adapter:mpaasframeworkadapter-build:1.0.0.190906163910@jar",
+			"bundleGav":"com.mpaas.framework.adapter:mpaasframeworkadapter-build:1.0.0.200421105225@jar",
 			"bundleName":"com-mpaas-framework-adapter-mpaasframeworkadapter",
 			"classifier":[
 				"AndroidManifest",
@@ -1636,12 +1607,12 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":3
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
 					"bundleName":"android-phone-mobilesdk-framework",
 					"intersection":2
 				}
@@ -1651,8 +1622,8 @@
 				"android-phone-mobilesdk-framework"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar"
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar"
 			],
 			"remove":false
 		},
@@ -1665,24 +1636,29 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":8
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-					"bundleName":"android-phone-mobilesdk-transport",
-					"intersection":8
+					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+					"bundleName":"android-phone-mobilesdk-storage",
+					"intersection":1
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+					"bundleName":"android-phone-mobilesdk-quinox",
+					"intersection":6
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
 					"bundleName":"android-phone-mobilesdk-framework",
 					"intersection":3
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-quinox",
-					"intersection":6
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+					"bundleName":"android-phone-mobilesdk-transport",
+					"intersection":8
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
@@ -1693,47 +1669,64 @@
 					"bundleGav":"com.alipay.android.phone.mobilesdk:liteprocess-build:1.0.0.190617201909@jar",
 					"bundleName":"android-phone-mobilesdk-liteprocess",
 					"intersection":5
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
-					"bundleName":"android-phone-mobilesdk-storage",
-					"intersection":1
 				}
 			],
 			"depends":[
 				"android-phone-mobilesdk-logging",
-				"android-phone-mobilesdk-transport",
-				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-storage",
 				"android-phone-mobilesdk-quinox",
+				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-transport",
 				"android-phone-thirdparty-androidsupport",
-				"android-phone-mobilesdk-liteprocess",
-				"android-phone-mobilesdk-storage"
+				"android-phone-mobilesdk-liteprocess"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
-				"com.alipay.android.phone.mobilesdk:liteprocess-build:1.0.0.190617201909@jar",
-				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar"
+				"com.alipay.android.phone.mobilesdk:liteprocess-build:1.0.0.190617201909@jar"
 			],
 			"remove":false
 		},
 		{
-			"bundleGav":"com.alipay.android.phone.wallet:aompfilemanager-build:1.0.0.200228173401@jar",
+			"bundleGav":"com.alipay.android.phone.wallet:aompfilemanager-build:1.0.0.200319181707@jar",
 			"bundleName":"android-phone-wallet-aompfilemanager",
 			"classifier":[
-				"AndroidManifest",
-				"api",
-				"jsapi",
-				"ui"
+				"AndroidManifest"
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+					"bundleName":"android-phone-wallet-nebula",
+					"intersection":47
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":3
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+					"bundleName":"android-phone-mobilesdk-storage",
+					"intersection":8
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
+					"bundleName":"android-phone-mobilesdk-monitor",
+					"intersection":1
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":4
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+					"bundleName":"android-phone-mobilesdk-transport",
+					"intersection":11
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
@@ -1751,21 +1744,6 @@
 					"intersection":1
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
-					"bundleName":"android-phone-wallet-nebula",
-					"intersection":47
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-					"bundleName":"android-phone-mobilesdk-transport",
-					"intersection":11
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":4
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupportrecyclerview-build:7.23.2.190729114049@jar",
 					"bundleName":"android-phone-thirdparty-androidsupportrecyclerview",
 					"intersection":9
@@ -1781,42 +1759,39 @@
 					"intersection":3
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
-					"bundleName":"android-phone-mobilesdk-storage",
-					"intersection":8
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar",
 					"bundleName":"android-phone-thirdparty-fastjson",
 					"intersection":3
 				}
 			],
 			"depends":[
+				"android-phone-wallet-nebula",
 				"android-phone-mobilesdk-logging",
+				"android-phone-mobilesdk-storage",
+				"android-phone-mobilesdk-monitor",
+				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-transport",
 				"android-phone-wallet-antui",
 				"android-phone-mobilecommon-multimedia",
 				"android-phone-mobilesdk-commonbizservice",
-				"android-phone-wallet-nebula",
-				"android-phone-mobilesdk-transport",
-				"android-phone-mobilesdk-framework",
 				"android-phone-thirdparty-androidsupportrecyclerview",
 				"android-phone-thirdparty-androidsupport",
 				"android-phone-mobilesdk-commonservice",
-				"android-phone-mobilesdk-storage",
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 				"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
 				"com.alipay.android.phone.mobilecommon:multimedia-build:1.19.0.200228192536@jar",
 				"com.alipay.android.phone.mobilesdk:commonbizservice-build:1.7.0.200228173401@jar",
-				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
 				"com.alipay.android.phone.thirdparty:androidsupportrecyclerview-build:7.23.2.190729114049@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
-				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
 				"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar"
 			],
 			"remove":false
@@ -1830,28 +1805,48 @@
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+					"bundleName":"android-phone-wallet-nebula",
+					"intersection":20
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":12
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
-					"bundleName":"android-phone-mobilesdk-common",
+					"bundleGav":"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200525154723@jar",
+					"bundleName":"com-mpaas-mpaasadapter-commonbiz",
 					"intersection":2
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:scanexport-build:1.3.3.200228192432@jar",
+					"bundleGav":"com.alipay.android.phone.wallet:scanexport-build:1.3.3.200511185851@jar",
 					"bundleName":"android-phone-wallet-scanexport",
 					"intersection":2
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+					"bundleName":"android-phone-mobilesdk-quinox",
+					"intersection":8
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
 					"bundleName":"android-phone-mobilesdk-monitor",
 					"intersection":4
 				},
 				{
-					"bundleGav":"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200228173401@jar",
-					"bundleName":"com-mpaas-mpaasadapter-commonbiz",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":11
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+					"bundleName":"android-phone-mobilesdk-transport",
+					"intersection":5
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
+					"bundleName":"android-phone-mobilesdk-common",
 					"intersection":2
 				},
 				{
@@ -1860,29 +1855,9 @@
 					"intersection":1
 				},
 				{
-					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
-					"bundleName":"android-phone-wallet-nebula",
-					"intersection":20
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
 					"bundleName":"android-phone-mobilesdk-rpc",
 					"intersection":14
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-					"bundleName":"android-phone-mobilesdk-transport",
-					"intersection":5
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":11
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-quinox",
-					"intersection":8
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
@@ -1906,34 +1881,34 @@
 				}
 			],
 			"depends":[
-				"android-phone-mobilesdk-logging",
-				"android-phone-mobilesdk-common",
-				"android-phone-wallet-scanexport",
-				"android-phone-mobilesdk-monitor",
-				"com-mpaas-mpaasadapter-commonbiz",
-				"android-phone-mobilesdk-commonbizservice",
 				"android-phone-wallet-nebula",
-				"android-phone-mobilesdk-rpc",
-				"android-phone-mobilesdk-transport",
-				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-logging",
+				"com-mpaas-mpaasadapter-commonbiz",
+				"android-phone-wallet-scanexport",
 				"android-phone-mobilesdk-quinox",
+				"android-phone-mobilesdk-monitor",
+				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-transport",
+				"android-phone-mobilesdk-common",
+				"android-phone-mobilesdk-commonbizservice",
+				"android-phone-mobilesdk-rpc",
 				"android-phone-thirdparty-androidsupport",
 				"android-phone-mobilesdk-commonservice",
 				"mobile-nebulakernel",
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200525154723@jar",
+				"com.alipay.android.phone.wallet:scanexport-build:1.3.3.200511185851@jar",
+				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200421102403@jar",
+				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200415195720@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 				"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
-				"com.alipay.android.phone.wallet:scanexport-build:1.3.3.200228192432@jar",
-				"com.alipay.android.phone.mobilesdk:monitor-build:2.1.4.200228192135@jar",
-				"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200228173401@jar",
 				"com.alipay.android.phone.mobilesdk:commonbizservice-build:1.7.0.200228173401@jar",
-				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
 				"com.alipay.android.phone.mobilesdk:rpc-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-				"com.alipay.android.phone.mobilesdk:quinox-build:2.6.2.200228154117@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
 				"com.alipay.mobile:nebulakernel-build:1.0.0.190320163137@jar",
@@ -1981,15 +1956,43 @@
 			"bundleGav":"com.alipay.android.phone.wallet:nebulauc-build:1.6.0.200305192821@jar",
 			"bundleName":"android-phone-wallet-nebulauc",
 			"classifier":[
-				"api",
-				"ui",
-				"AndroidManifest"
+				"ui"
 			],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.multimedia:xmedia-build:1.0.0.200615174818@jar",
+					"bundleName":"multimedia-xmedia",
+					"intersection":4
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+					"bundleName":"android-phone-wallet-nebula",
+					"intersection":133
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":6
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+					"bundleName":"android-phone-mobilesdk-storage",
+					"intersection":3
+				},
+				{
+					"bundleGav":"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200525154723@jar",
+					"bundleName":"com-mpaas-mpaasadapter-commonbiz",
+					"intersection":2
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+					"bundleName":"android-phone-mobilesdk-framework",
+					"intersection":6
+				},
+				{
+					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
+					"bundleName":"android-phone-mobilesdk-transport",
+					"intersection":18
 				},
 				{
 					"bundleGav":"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
@@ -2007,31 +2010,6 @@
 					"intersection":1
 				},
 				{
-					"bundleGav":"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200228173401@jar",
-					"bundleName":"com-mpaas-mpaasadapter-commonbiz",
-					"intersection":2
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
-					"bundleName":"android-phone-wallet-nebula",
-					"intersection":133
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-					"bundleName":"android-phone-mobilesdk-transport",
-					"intersection":18
-				},
-				{
-					"bundleGav":"com.alipay.multimedia:xmedia-build:1.0.0.200228154117@jar",
-					"bundleName":"multimedia-xmedia",
-					"intersection":4
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
-					"bundleName":"android-phone-mobilesdk-framework",
-					"intersection":6
-				},
-				{
 					"bundleGav":"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 					"bundleName":"android-phone-thirdparty-androidsupport",
 					"intersection":3
@@ -2040,11 +2018,6 @@
 					"bundleGav":"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
 					"bundleName":"android-phone-mobilesdk-commonservice",
 					"intersection":1
-				},
-				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
-					"bundleName":"android-phone-mobilesdk-storage",
-					"intersection":3
 				},
 				{
 					"bundleGav":"com.alipay.mobile:nebulakernel-build:1.0.0.190320163137@jar",
@@ -2058,34 +2031,34 @@
 				}
 			],
 			"depends":[
+				"multimedia-xmedia",
+				"android-phone-wallet-nebula",
 				"android-phone-mobilesdk-logging",
+				"android-phone-mobilesdk-storage",
+				"com-mpaas-mpaasadapter-commonbiz",
+				"android-phone-mobilesdk-framework",
+				"android-phone-mobilesdk-transport",
 				"android-phone-wallet-antui",
 				"android-phone-mobilecommon-multimedia",
 				"android-phone-mobilesdk-common",
-				"com-mpaas-mpaasadapter-commonbiz",
-				"android-phone-wallet-nebula",
-				"android-phone-mobilesdk-transport",
-				"multimedia-xmedia",
-				"android-phone-mobilesdk-framework",
 				"android-phone-thirdparty-androidsupport",
 				"android-phone-mobilesdk-commonservice",
-				"android-phone-mobilesdk-storage",
 				"mobile-nebulakernel",
 				"android-phone-thirdparty-fastjson"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+				"com.alipay.multimedia:xmedia-build:1.0.0.200615174818@jar",
+				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200610101910@jar",
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
+				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.200525171156@jar",
+				"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200525154723@jar",
+				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200323184446@jar",
+				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200319181707@jar",
 				"com.alipay.android.phone.wallet:antui-build:10.1.50.200302102130@jar",
 				"com.alipay.android.phone.mobilecommon:multimedia-build:1.19.0.200228192536@jar",
 				"com.alipay.android.phone.mobilesdk:common-build:1.8.2.200228192536@jar",
-				"com.mpaas.mpaasadapter:commonbiz-build:1.0.0.200228173401@jar",
-				"com.alipay.android.phone.wallet:nebula-build:1.6.2.200228173401@jar",
-				"com.alipay.android.phone.mobilesdk:transport-build:1.8.5.200228173401@jar",
-				"com.alipay.multimedia:xmedia-build:1.0.0.200228154117@jar",
-				"com.alipay.android.phone.mobilesdk:framework-build:2.6.2.200228154117@jar",
 				"com.alipay.android.phone.thirdparty:androidsupport-build:13.23.2.190624145529@jar",
 				"com.alipay.android.phone.mobilesdk:commonservice-build:1.9.0.190617145454@jar",
-				"com.alipay.android.phone.mobilesdk:storage-build:1.7.0.190615004747@jar",
 				"com.alipay.mobile:nebulakernel-build:1.0.0.190320163137@jar",
 				"com.alipay.android.phone.thirdparty:fastjson-build:1.1.70.190213120120@jar"
 			],
@@ -2097,7 +2070,7 @@
 			"classifier":[],
 			"dependBundles":[
 				{
-					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar",
+					"bundleGav":"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar",
 					"bundleName":"android-phone-mobilesdk-logging",
 					"intersection":19
 				}
@@ -2106,7 +2079,7 @@
 				"android-phone-mobilesdk-logging"
 			],
 			"dependsGav":[
-				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200306130708@jar"
+				"com.alipay.android.phone.mobilesdk:logging-build:2.1.0.200608165103@jar"
 			],
 			"remove":false
 		}
@@ -2119,7 +2092,6 @@
 				"android-phone-mobilesdk-netsdkextdepend",
 				"android-phone-mobilesdk-commonbizservice",
 				"com-mpaas-framework-adapter-mpaasframeworkadapter",
-				"android-phone-mobilesdk-aspect",
 				"mobileapi-mobileappcommon",
 				"com-mpaas-mpaasadapter-mpaasadapter",
 				"android-phone-mobilesdk-common",
@@ -2162,7 +2134,6 @@
 				"android-phone-mobilesdk-commonservice",
 				"android-phone-mobilesdk-monitor",
 				"mobileapi-mobileappcommon",
-				"android-phone-mobilesdk-aspect",
 				"android-phone-mobilesdk-autotracker",
 				"com-mpaas-mas-adapter-mpaasmasadapter",
 				"android-phone-wallet-nebula",
@@ -2209,6 +2180,6 @@
 		}
 	],
 	"cp_change_id":"cp_dailyRelease_19565",
-	"update_time":"1583736033",
-	"version_code":1
+	"update_time":"1592454235",
+	"version_code":7
 }

@@ -25,6 +25,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="12dp"
             android:scaleType="centerInside"
+            android:layout_toRightOf="@+id/back"
             android:src="@drawable/close"
             android:visibility="gone" />
 
@@ -57,12 +58,35 @@
         </LinearLayout>
 
         <FrameLayout
-            android:id="@+id/options1"
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
             android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/oimage"
+                android:layout_width="26dp"
+                android:src="@drawable/more"
+                android:layout_height="26dp"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/otext"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/options1"
             android:layout_centerVertical="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/options"
             android:visibility="gone">
 
             <ImageView
@@ -70,18 +94,15 @@
                 android:layout_width="26dp"
                 android:src="@drawable/more"
                 android:layout_height="26dp"
+                android:visibility="gone"
                 android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/o1text"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp" />
         </FrameLayout>
 
-        <LinearLayout
-            android:id="@+id/options"
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="12dp"
-            android:orientation="horizontal"
-            android:visibility="gone" />
 
 
     </RelativeLayout>
